@@ -15,10 +15,10 @@
     <section>
         <?php
             // Database connection parameters
-            $host = "your_host";
-            $username = "your_username";
-            $password = "your_password";
-            $database = "your_database";
+            $host = "localhost";
+            $username ="root";
+            $password ="";
+            $database ="open_source";
 
             // Create a connection to the database
             $conn = new mysqli($host, $username, $password, $database);
@@ -29,7 +29,7 @@
             }
 
             // SQL query to retrieve data (replace 'your_table' with your actual table name)
-            $sql = "SELECT * FROM your_table";
+            $sql = "SELECT * FROM employees";
             $result = $conn->query($sql);
 
             // Display the data
